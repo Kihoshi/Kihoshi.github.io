@@ -1,1 +1,15 @@
-Hello World
+<script>
+    function myFunction(val) {
+      
+
+      var hhh = parseFloat(document.getElementById("hhh").value||0)
+      var lll = parseFloat(document.getElementById("lll").value||0)
+      var ccc = parseFloat(document.getElementById("ccc").value||0)
+      var final = hhh + lll+ccc
+      alert(final)
+    }
+    </script>
+ 
+<p>H<input id='hhh' type="number" name="txt"  onchange="myFunction(this.value)"></p>
+<p>L<input id='lll' type="number" name="txt"  onchange="myFunction(this.value)"></p>
+<p>C<input id='ccc' type="number" name="txt"  onchange="myFunction(this.value)"></p>
