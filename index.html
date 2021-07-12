@@ -16,10 +16,26 @@
         document.getElementById("upper").innerHTML = upperLine;
         document.getElementById("lower").innerHTML = lowerLine;
     }
+        function myFunction2(val) {
+      
+
+      var cap = parseFloat(document.getElementById("cap").value||0)
+      var power = parseFloat(document.getElementById("power").value||0)
+      var snl = parseFloat(document.getElementById("snl").value||0)
+      var life = cap /power /snl
+ 
+        document.getElementById("life").innerHTML = life;
+    }
     </script>
  
-<p>H<input id='hhh' type="number" name="txt"  onchange="myFunction(this.value)"></p>
-<p>L<input id='lll' type="number" name="txt"  onchange="myFunction(this.value)"></p>
-<p>C<input id='ccc' type="number" name="txt"  onchange="myFunction(this.value)"></p>
+<p>H<input id='hhh' type="number" name="txt"  onchange="myFunction2(this.value)"></p>
+<p>L<input id='lll' type="number" name="txt"  onchange="myFunction2(this.value)"></p>
+<p>C<input id='ccc' type="number" name="txt"  onchange="myFunction2(this.value)"></p>
 <p id='upper'></p>
 <p id='lower'></p>
+
+
+<p>H<input id='cap' type="number" name="txt"  onchange="myFunction(this.value)"></p>
+<p>L<input id='power' type="number" name="txt"  onchange="myFunction(this.value)"></p>
+<p>C<input id='snl' type="number" name="txt"  onchange="myFunction(this.value)"></p>
+<p>C<input id='life' type="number" name="txt"  onchange="myFunction(this.value)"></p>
