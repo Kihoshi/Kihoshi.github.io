@@ -19,7 +19,7 @@ var driverIcon = Leaflet.icon({
 });
 
 
-const zoom = 18
+const zoom = 13
 function SetViewOnClick({ coords }) {
   const map = useMap();
   map.setView(coords, zoom);
@@ -46,13 +46,10 @@ function OfficeMap({ coords, drivers }) {
 
         {drivers.length > 0 ?
           drivers.map((v, i) => {
-            console.log(v)
-            return <Marker position={v.coords} icon={driverIcon} />
+            return <Marker key={'driver'+i} position={[v.location.latitude,v.location.longitude]} icon={driverIcon} />
           })
           : ''}
-        <div className="leaflet-bottom leaflet-left">
 
-        </div>
       </MapContainer>
 
     </>
