@@ -1,0 +1,13 @@
+# OSX
+#
+.DS_Store
+
+# ZIP
+*.zip
+*.dev.js
+
+node_modules/
+
+
+package-lock.json
+.DS_Store
