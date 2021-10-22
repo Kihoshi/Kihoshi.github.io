@@ -1,33 +1,45 @@
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZE58VM7WSR"></script>
 <script>
-    function myFunction(val) {
-      
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      var hhh = parseFloat(document.getElementById("hhh").value||0)
-      var lll = parseFloat(document.getElementById("lll").value||0)
-      var ccc = parseFloat(document.getElementById("ccc").value||0)
-      var final = hhh + lll+ccc
-     
-        var algo1 = (hhh + lll +ccc) /3
-        var algo2 = (hhh + lll) /2
-         var diff = algo1-algo2
-        var upperLine = algo1 +diff
-        var lowerLine = algo1 -diff
-        
-        document.getElementById("upper").innerHTML = upperLine;
-        document.getElementById("lower").innerHTML = lowerLine;
-    }
-        function myFunction2(val) {
-      
+  gtag('config', 'G-ZE58VM7WSR');
+</script>
 
-      var cap = parseFloat(document.getElementById("cap").value||0)
-      var power = parseFloat(document.getElementById("power").value||0)
-      var snl = parseFloat(document.getElementById("snl").value||0)
-      var life = cap /power /snl
- 
-        document.getElementById("life").innerHTML = life;
-    }
-    </script>
- 
+<script>
+  function myFunction(val) {
+    
+
+    var hhh = parseFloat(document.getElementById("hhh").value||0)
+    var lll = parseFloat(document.getElementById("lll").value||0)
+    var ccc = parseFloat(document.getElementById("ccc").value||0)
+    var final = hhh + lll+ccc
+   
+      var algo1 = (hhh + lll +ccc) /3
+      var algo2 = (hhh + lll) /2
+       var diff = algo1-algo2
+      var upperLine = algo1 +diff
+      var lowerLine = algo1 -diff
+      
+      document.getElementById("upper").innerHTML = upperLine;
+      document.getElementById("lower").innerHTML = lowerLine;
+  }
+      function myFunction2(val) {
+    
+
+    var cap = parseFloat(document.getElementById("cap").value||0)
+    var power = parseFloat(document.getElementById("power").value||0)
+    var snl = parseFloat(document.getElementById("snl").value||0)
+    var life = cap /power /snl
+
+      document.getElementById("life").innerHTML = life;
+  }
+  </script>
+</head> 
 <p>H<input id='hhh' type="number" name="txt"  onchange="myFunction(this.value)"></p>
 <p>L<input id='lll' type="number" name="txt"  onchange="myFunction(this.value)"></p>
 <p>C<input id='ccc' type="number" name="txt"  onchange="myFunction(this.value)"></p>
@@ -39,3 +51,4 @@
 <p>power<input id='power' type="number" name="txt"  onchange="myFunction2(this.value)"></p>
 <p>snl<input id='snl' type="number" name="txt"  onchange="myFunction2(this.value)"></p>
 <p id='life'></p>
+
