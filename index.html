@@ -1,51 +1,11 @@
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZE58VM7WSR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZE58VM7WSR');
-</script>
-
-<script>
-  window.dataLayer.push({
-   'event': 'registrationComplete',
-   'plan': 'planA'
-   });
-   console.log(window.dataLayer)
-  </script>
-
-<script>
-  function myFunction(val) {
-    
-
-    var hhh = parseFloat(document.getElementById("hhh").value||0)
-    var lll = parseFloat(document.getElementById("lll").value||0)
-    var ccc = parseFloat(document.getElementById("ccc").value||0)
-    var final = hhh + lll+ccc
-   
-      var algo1 = (hhh + lll +ccc) /3
-      var algo2 = (hhh + lll) /2
-       var diff = algo1-algo2
-      var upperLine = algo1 +diff
-      var lowerLine = algo1 -diff
-      
-      document.getElementById("upper").innerHTML = upperLine;
-      document.getElementById("lower").innerHTML = lowerLine;
-  }
-      function myFunction2(val) {
-    
-
-    var cap = parseFloat(document.getElementById("cap").value||0)
-    var power = parseFloat(document.getElementById("power").value||0)
-    var snl = parseFloat(document.getElementById("snl").value||0)
-    var life = cap /power /snl
-
-      document.getElementById("life").innerHTML = life;
-  }
+<head> 
+  
+  <script>
+    dataLayer = [{
+      'pageCategory': 'signup',
+      'visitorType': 'high-value'
+    }];
   </script>
 
   <!-- Google Tag Manager -->
@@ -56,11 +16,10 @@
   })(window,document,'script','dataLayer','GTM-PXKR8MW');</script>
   <!-- End Google Tag Manager -->
 </head> 
-
-
 <body>
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXKR8MW"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <h1>HI</h1>
 </body>
