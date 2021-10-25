@@ -21,7 +21,10 @@
   gtag('config', 'G-ZE58VM7WSR');
 </script>
   <script>
-      window.dataLayer=[
+
+
+setTimeout(function(){ 
+  window.dataLayer=[
         {
           'event':'paymentSuccess',
           'transactionId':'id123',
@@ -30,6 +33,9 @@
           'transactionProducts':[{'name':'ProductA'}]
         }
         ]
+console.log("trigger datalayer")
+}, 3000);
+     
   </script>
 </head> 
 <body>
@@ -40,5 +46,5 @@
 
 
 
-  <h1>HI 123</h1>
+  <h1>HI 1234</h1>
 </body>
