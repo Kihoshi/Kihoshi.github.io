@@ -23,9 +23,11 @@
   <script>
       window.dataLayer=[
         {
-          paymentStatus:"Success",
-          paymentPrice:1,
-          productName:"productA",
+          event:'paymentSuccess',
+          'transactionId':'id123',
+          'transactionAffiliation':'others',
+          'transactionTotal':250,
+          'transactionProducts':[{'name':'ProductA'}]
         }
         ]
   </script>
