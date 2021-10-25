@@ -36,6 +36,22 @@ setTimeout(function(){
         ]
 console.log("trigger datalayer")
 }, 1);
+
+
+gtag("event", "view_item", {
+    currency: "USD",
+    value: 7.77,
+    items: [
+      {
+        item_id: "SKU_12345",
+        item_name: "Stan and Friends Tee",
+        item_brand: "Google",
+        item_category: "Apparel",
+        price: 9.99,
+        quantity: 1
+      }
+    ]
+  });
      
   </script>
 </head> 
