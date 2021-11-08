@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
  <!-- Google Tag Manager -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -17,20 +16,15 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   
-  <h1>Test123456</h1>
+  <h1>Test1231</h1>
 
-  <div id="target"></div>
- <script>
-
-$.ajax({
-    url: "https://claim-motor-axa-8d53aa0c662a7b443d6892e.webflow.io/home-copy",
-    headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Access-Control-Allow-Origin': '*'
+  <script>
+    fetch('https://claim-motor-axa-8d53aa0c662a7b443d6892e.webflow.io/home-copy',{
+      headers: {
+'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
     },
-    type: "GET",
-    success: function() { alert('Success!'); }
-});
- </script>
+    })
+  .then(formatedResponse =>  console.log(formatedResponse))
+  </script>
 </body>
 </html>
